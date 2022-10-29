@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Число 1<input type="text" id="n1"></p>
+    <p>Число 2<input type="text" id="n2"></p>
+    <button onclick="plus()">Сложить</button>
+    <button onclick="minus()">Вычесть</button>
+    <button onclick="multiply()">Умножить</button>
+    <button onclick="divide()" onclick="divideZero">Делить</button>
+    <hr>
+    <p id="out">Результат:</p>
+<script>
+    function plus () {
+let n1, n2;
+n1=document.getElementById(`n1`).value;
+n1=parseInt(n1);
+n2=document.getElementById(`n2`).value;
+n2=parseInt(n2);
+result=n1+n2;
+document.getElementById('out').innerHTML=result;
+    }
+    function minus (){
+        let n1, n2;
+n1=document.getElementById(`n1`).value;
+n1=parseInt(n1);
+n2=document.getElementById(`n2`).value;
+n2=parseInt(n2);
+result=n1-n2; 
+document.getElementById('out').innerHTML=result; 
+    }
+    function multiply (){
+        let n1, n2;
+n1=document.getElementById(`n1`).value;
+n1=parseInt(n1);
+n2=document.getElementById(`n2`).value;
+n2=parseInt(n2);
+result=n1*n2; 
+document.getElementById('out').innerHTML=result; 
+    }
+        function divide(){
+        let n1, n2;
+n1=document.getElementById(`n1`).value;
+n1=parseInt(n1);
+n2=document.getElementById(`n2`).value;
+n2=parseInt(n2);
+result=n1/n2; 
+document.getElementById('out').innerHTML=result; 
+if (n2==0){
+    alert("На ноль делить нельзя!");}
+
+}
+
+</script>
+</body>
+</html>

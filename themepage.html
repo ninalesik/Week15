@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        </style>
+</head>
+<body id="result" class="body">
+<h1>Выберите тему вашей страницы</h1>
+<select name="breed" id="breed" onchange="choose()">
+<option value="theme">Выбери тему</option>
+<option value="beige">Бежевый</option>
+<option value="lightblue">Голубой</option>
+<option value="yellow">Желтый</option>
+<option value="orange">Оранжевый</option>
+<option value="blue">Синий</option>
+</select>
+
+<script>
+function choose(){
+    switch (document.getElementById("breed").value){
+        case "theme": document.getElementById('result').style.backgroundColor='white'; break;
+        case "beige": document.getElementById('result').style.backgroundColor='beige'; break;
+        case "lightblue": document.getElementById('result').style.backgroundColor='#D1E8E2'; break;
+        case "yellow": document.getElementById('result').style.backgroundColor='#F9BF51'; break;
+        case "orange": document.getElementById('result').style.backgroundColor='#FE7E37'; break;
+        case "blue": document.getElementById('result').style.backgroundColor='#008F8D'; break;
+    }
+}
+</script>
+
+    
+</body>
+</html>
